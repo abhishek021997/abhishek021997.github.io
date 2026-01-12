@@ -1,37 +1,73 @@
 # 👋 Hi, I'm Abhishek Sharma
 
-Senior System Administrator / Linux Administrator with **7+ years of experience**
-supporting **mission-critical Linux infrastructure** across **BFSI and Government
-environments (YES Bank, ICICI Bank, Indian Air Force)**.
+## Linux System Administrator | Infrastructure Support Engineer
 
-## 🔧 Core Skills
-- Linux (RHEL, CentOS, AIX, Ubuntu)
-- User & Group Management, systemd, cron
-- Bash Scripting & Automation
-- Apache & Nginx
-- Networking (TCP/IP, DNS, SSH, firewalld, iptables)
-- VMware ESXi, KVM
-- Monitoring: Nagios, Zabbix
-- Backup & Recovery: rsync, DR support
-- Cloud: Azure (AZ-104), AWS EC2 basics
-- Security Hardening & Patch Management
+I am a Linux System Administrator with 7+ years of experience in
+Infrastructure and Production Support across Banking and Defence environments.
 
-## 🧪 What You’ll Find Here
-This GitHub showcases **real-world System Administrator work**, including:
-- Linux administration scripts
-- Automation for backups & monitoring
-- Server hardening examples
-- Documentation & runbooks
-- Cloud admin labs (Azure & AWS)
+I specialize in Linux server administration, troubleshooting, automation,
+and cloud infrastructure support.
 
-## 📜 Certifications
-- RHCSA – Red Hat Certified System Administrator
-- RHCE – Red Hat Certified Engineer
-- Microsoft Azure Administrator (AZ-104)
+---
 
-## 🌐 Portfolio
-👉 https://abhishek021997.github.io
+## 🔧 Technical Skills
 
-## 🔗 Connect With Me
-- LinkedIn: https://www.linkedin.com/in/abhishek-sharma-1b8bb03a2
-- GitHub: https://github.com/abhishek021997
+- Linux Administration (RHEL / CentOS)
+- Server Troubleshooting (CPU, Memory, Disk, Services)
+- Production Support & Incident Management (ITIL)
+- Shell / Bash Scripting
+- Ansible Automation
+- AWS (EC2, IAM, S3)
+- Microsoft Azure (AZ-104)
+- Monitoring & Infrastructure Support
+
+---
+
+## 🎓 Certifications
+
+- Red Hat Certified System Administrator (RHCSA)
+- Red Hat Certified Engineer (RHCE)
+- Microsoft Azure Administrator Associate (AZ-104)
+
+---
+
+## 💼 Professional Experience
+
+### Infrastructure Support Engineer – Defence Project (Indian Air Force)
+- Managing and troubleshooting Linux servers in secure environments
+- Resolving production issues and ensuring high system availability
+- Automating routine tasks using Bash and Ansible
+- Working with L2/L3 teams under ITIL processes
+
+### Desktop / Infrastructure Support Engineer – Wipro
+- Infrastructure support for Banking clients (ICICI Bank, YES Bank)
+- Linux & Windows system support within SLA timelines
+- Incident handling and coordination with multiple teams
+
+---
+
+## 📂 Hands-on Projects
+
+🔹 **Linux Server Health Check Script**
+- Bash script to monitor CPU, memory, disk, and services
+
+🔹 **User & Access Management Automation**
+- Shell scripts for user creation, permission handling, and cleanup
+
+🔹 **Ansible Automation**
+- Playbooks for package installation and configuration management
+
+🔹 **Cloud Labs**
+- AWS EC2 setup and basic administration
+- Azure VM deployment and management
+
+---
+
+## 📫 Connect with Me
+
+- LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN-URL
+- Email: your-email@example.com
+
+---
+
+⭐ This GitHub showcases my hands-on learning and real-world infrastructure experience.
