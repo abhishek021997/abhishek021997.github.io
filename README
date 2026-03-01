@@ -1,73 +1,83 @@
-# 👋 Hi, I'm Abhishek Sharma
+# 👋 Hi, I'm Abhishek Sharma  
 
-## Linux System Administrator | Infrastructure Support Engineer
-
-I am a Linux System Administrator with 7+ years of experience in
-Infrastructure and Production Support across Banking and Defence environments.
-
-I specialize in Linux server administration, troubleshooting, automation,
-and cloud infrastructure support.
+🚀 **Linux System Administrator | RHCE Certified | AWS | Ansible | Production Support**
 
 ---
 
-## 🔧 Technical Skills
+## 👨‍💻 About Me
 
-- Linux Administration (RHEL / CentOS)
-- Server Troubleshooting (CPU, Memory, Disk, Services)
-- Production Support & Incident Management (ITIL)
-- Shell / Bash Scripting
+I am a RHCE-certified Linux System Administrator with 4+ years of experience managing 50+ RHEL production servers in Banking and Defence environments.
+
+I specialize in:
+
+- Linux Server Administration (RHEL 7/8)
+- System Hardening & Kernel Patching
+- LVM & Storage Management
+- Bash Shell Scripting
 - Ansible Automation
-- AWS (EC2, IAM, S3)
-- Microsoft Azure (AZ-104)
-- Monitoring & Infrastructure Support
+- AWS (EC2, IAM, VPC, CloudWatch)
+- L2/L3 Production Support
+- SLA & Incident Management
+
+📍 Based in India  
+⏳ Available to join within 15 days  
 
 ---
 
-## 🎓 Certifications
+## 🛠️ Technical Skills
 
-- Red Hat Certified System Administrator (RHCSA)
-- Red Hat Certified Engineer (RHCE)
-- Microsoft Azure Administrator Associate (AZ-104)
+### 🐧 Linux
+- RHEL, CentOS, Ubuntu
+- User & Group Management
+- SSH, Cron Jobs
+- DNS, NFS
+- LVM Administration
+- Performance Troubleshooting
+- System Monitoring
 
----
+### ☁️ Cloud
+- AWS EC2
+- IAM
+- VPC
+- S3
+- CloudWatch
+- Security Groups
 
-## 💼 Professional Experience
-
-### Infrastructure Support Engineer – Defence Project (Indian Air Force)
-- Managing and troubleshooting Linux servers in secure environments
-- Resolving production issues and ensuring high system availability
-- Automating routine tasks using Bash and Ansible
-- Working with L2/L3 teams under ITIL processes
-
-### Desktop / Infrastructure Support Engineer – Wipro
-- Infrastructure support for Banking clients (ICICI Bank, YES Bank)
-- Linux & Windows system support within SLA timelines
-- Incident handling and coordination with multiple teams
-
----
-
-## 📂 Hands-on Projects
-
-🔹 **Linux Server Health Check Script**
-- Bash script to monitor CPU, memory, disk, and services
-
-🔹 **User & Access Management Automation**
-- Shell scripts for user creation, permission handling, and cleanup
-
-🔹 **Ansible Automation**
-- Playbooks for package installation and configuration management
-
-🔹 **Cloud Labs**
-- AWS EC2 setup and basic administration
-- Azure VM deployment and management
+### ⚙️ Automation
+- Bash Scripting
+- Ansible Playbooks
+- Basic CI/CD Concepts
 
 ---
 
-## 📫 Connect with Me
+## 📂 Featured Projects
 
-- LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN-URL
-- Email: your-email@example.com
+### 🔐 Linux Server Hardening
+Implemented security hardening, firewall configuration, SSH optimization, and patch automation across production servers.
+
+### ☁️ AWS Infrastructure Deployment
+Deployed EC2 instances with IAM roles, VPC networking, and automated backup strategy using snapshots.
+
+### 🤖 Ansible Automation
+Developed playbooks for package installation, user management, and configuration deployment across multiple servers.
 
 ---
 
-⭐ This GitHub showcases my hands-on learning and real-world infrastructure experience.
+## 📊 Professional Experience
+
+- Managing 50+ RHEL production servers
+- Ensuring 99.9% uptime in SLA-driven environments
+- Providing 24/7 L2/L3 Production Support
+- Performing root cause analysis for critical incidents
+
+---
+
+## 📫 Connect With Me
+
+- 🔗 LinkedIn: https://linkedin.com/in/yourprofile
+- 💻 Portfolio: https://yourusername.github.io
+- 📧 Email: yourmail@gmail.com
+
+---
+
+⭐ Always learning Cloud, Automation, and DevOps technologies.
