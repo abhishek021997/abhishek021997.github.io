@@ -1,82 +1,82 @@
-# 👋 Hi, I'm Abhishek Sharma  
+# 👋 Hi, I'm Abhishek Sharma
 
-🚀 **Linux System Administrator | RHCE Certified | AWS | Ansible | Production Support**
+🚀 **Linux System Administrator | RHCE Certified | AWS | Ansible | Banking & Defence Production Support**
+
+![Profile views](https://komarev.com/ghpvc/?username=abhishek021997&color=34D399&style=flat-square)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/abhishek-sharma-7b6974153)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-34D399?style=flat-square&logo=googlechrome&logoColor=white)](https://abhishek021997.github.io)
+[![Email](https://img.shields.io/badge/Email-Contact-F2A93C?style=flat-square&logo=gmail&logoColor=white)](mailto:abhishek1997sh@gmail.com)
 
 ---
 
 ## 👨‍💻 About Me
 
-I am a RHCE-certified Linux System Administrator with 4+ years of experience managing 50+ RHEL production servers in Banking and Defence environments.
+RHCE-certified Linux System Administrator with **7+ years of overall IT experience**, including **4.5+ years of hands-on Linux Administration** across Banking and Defence production environments (RHEL 7/8/9).
 
 I specialize in:
 
-- Linux Server Administration (RHEL 7/8)
+- Linux Server Administration (RHEL 7/8/9, CentOS)
 - System Hardening & Kernel Patching
 - LVM & Storage Management
 - Bash Shell Scripting
 - Ansible Automation
-- AWS (EC2, IAM, VPC, CloudWatch)
-- L2/L3 Production Support
-- SLA & Incident Management
+- AWS (EC2, IAM, VPC, S3, CloudWatch)
+- Incident, Change & Problem Management (RCA, ITSM, SLA)
+- 24×7 Production Support
 
-📍 Based in India  
-⏳ Available to join within 15 days  
+📍 Based in New Delhi, India
+⏳ Available to join within 15 days
 
 ---
 
 ## 🛠️ Technical Skills
 
 ### 🐧 Linux
-- RHEL, CentOS, Ubuntu
-- User & Group Management
-- SSH, Cron Jobs
-- DNS, NFS
-- LVM Administration
-- Performance Troubleshooting
-- System Monitoring
+`RHEL 7/8/9` `CentOS` `IBM AIX (L1)` `User & Group Management` `SSH Configuration` `Cron Jobs` `LVM Administration` `System Hardening` `Performance Tuning` `Log Analysis`
 
 ### ☁️ Cloud
-- AWS EC2
-- IAM
-- VPC
-- S3
-- CloudWatch
-- Security Groups
+`AWS EC2` `IAM` `VPC` `S3` `EBS` `CloudWatch` `Security Groups`
 
-### ⚙️ Automation
-- Bash Scripting
-- Ansible Playbooks
-- Basic CI/CD Concepts
+### ⚙️ Automation & Tools
+`Bash Scripting` `Ansible (Playbooks, Roles)` `Docker` `Kubernetes (Basic)` `Jenkins` `Git` `Grafana` `Prometheus`
+
+### 📜 Certifications
+`RHCSA` — Red Hat Certified System Administrator
+`RHCE` — Red Hat Certified Engineer
+`AZ-104` — Microsoft Azure Administrator Associate
+`SAA-C03` — AWS Certified Solutions Architect – Associate
 
 ---
 
 ## 📂 Featured Projects
 
 ### 🔐 Linux Server Hardening
-Implemented security hardening, firewall configuration, SSH optimization, and patch automation across production servers.
+Implemented security hardening, firewall configuration, SSH optimization, and patch automation across production RHEL servers.
 
 ### ☁️ AWS Infrastructure Deployment
-Deployed EC2 instances with IAM roles, VPC networking, and automated backup strategy using snapshots.
+Deployed EC2 instances with IAM roles, VPC networking, and an automated backup strategy using snapshots.
 
 ### 🤖 Ansible Automation
-Developed playbooks for package installation, user management, and configuration deployment across multiple servers.
+Built playbooks for package installation, user management, and configuration deployment across multiple servers.
 
 ---
 
-## 📊 Professional Experience
+## 📊 Professional Snapshot
 
-- Managing 50+ RHEL production servers
-- Ensuring 99.9% uptime in SLA-driven environments
-- Providing 24/7 L2/L3 Production Support
-- Performing root cause analysis for critical incidents
+- Administered production RHEL environments across **Banking (IDFC FIRST, ICICI, YES Bank)** and **Defence (Indian Air Force)** domains
+- Performed in-place OS upgrades (RHEL 7→8, 8→9) using local ISO repositories and change-controlled procedures
+- Delivered 24×7 production support in SLA-driven environments
+- Owned incident lifecycle end-to-end — log analysis, Root Cause Analysis (RCA), and resolution via ITSM tooling
+
+*(Have real numbers — servers managed, uptime %, incidents resolved/month? Swap them in here for extra impact.)*
 
 ---
 
 ## 📫 Connect With Me
 
-- 🔗 LinkedIn: www.linkedin.com/in/abhishek-sharma-7b6974153
-- 💻 Portfolio: https://abhishek021997.github.io
-- 📧 Email: abhishek1997sh@gmail.com
+- 🔗 LinkedIn: [linkedin.com/in/abhishek-sharma-7b6974153](https://www.linkedin.com/in/abhishek-sharma-7b6974153)
+- 💻 Portfolio: [abhishek021997.github.io](https://abhishek021997.github.io)
+- 📧 Email: [abhishek1997sh@gmail.com](mailto:abhishek1997sh@gmail.com)
 
 ---
 
