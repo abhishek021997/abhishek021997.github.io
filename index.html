@@ -1,189 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abhishek Sharma | Linux System Administrator</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhishek Sharma — Linux System Administrator</title>
+<meta name="description" content="Abhishek Sharma, RHCE-certified Linux System Administrator. 7+ years IT experience across Banking and Defence infrastructure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0A0F1C;
+    --surface:#111A2C;
+    --surface-2:#16223A;
+    --line:#223252;
+    --text:#E7ECF5;
+    --muted:#8A96AF;
+    --green:#34D399;
+    --green-dim:#1B4B3D;
+    --amber:#F2A93C;
+    --amber-dim:#4A3416;
+    --mono:'IBM Plex Mono', ui-monospace, monospace;
+    --sans:'Inter', system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--text);
+    font-family:var(--sans);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;}
+  ::selection{background:var(--green-dim); color:var(--green);}
 
-        body {
-            background: #0f172a;
-            color: #f1f5f9;
-            line-height: 1.6;
-        }
+  .wrap{max-width:840px; margin:0 auto; padding:0 24px;}
 
-        header {
-            padding: 60px 20px;
-            text-align: center;
-            background: linear-gradient(135deg, #1e293b, #0f172a);
-        }
+  /* ---------- NAV ---------- */
+  nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(10,15,28,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  nav .wrap{display:flex; align-items:center; justify-content:space-between; height:56px;}
+  .brand{font-family:var(--mono); font-size:14px; font-weight:600; letter-spacing:0.02em;}
+  .brand .dot{color:var(--green);}
+  .navlinks{display:flex; gap:22px; font-family:var(--mono); font-size:13px; color:var(--muted);}
+  .navlinks a{text-decoration:none; transition:color .15s;}
+  .navlinks a:hover{color:var(--text);}
+  .navlinks a:focus-visible, a:focus-visible{outline:2px solid var(--green); outline-offset:3px;}
+  .navlinks .resume-link{color:var(--amber);}
 
-        header h1 {
-            font-size: 2.8rem;
-            font-weight: 700;
-        }
+  /* ---------- HERO / TERMINAL ---------- */
+  header.hero{padding:64px 0 40px;}
+  .term{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:8px;
+    overflow:hidden;
+  }
+  .term-bar{
+    display:flex; align-items:center; gap:8px;
+    padding:10px 14px;
+    background:var(--surface-2);
+    border-bottom:1px solid var(--line);
+  }
+  .term-bar span{width:10px; height:10px; border-radius:50%; display:inline-block; background:var(--line);}
+  .term-bar .t-title{margin-left:8px; font-family:var(--mono); font-size:12px; color:var(--muted);}
+  .term-body{padding:22px 20px 26px; font-family:var(--mono); font-size:14px;}
+  .term-body .muted{color:var(--muted);}
+  .term-body .green{color:var(--green);}
+  .term-body .amber{color:var(--amber);}
+  .term-line{margin:0 0 6px; white-space:pre-wrap;}
+  #typed-line::after{
+    content:'▍'; margin-left:2px; color:var(--green);
+    animation:blink 1s steps(1) infinite;
+  }
+  @keyframes blink{50%{opacity:0;}}
 
-        header p {
-            margin-top: 10px;
-            font-size: 1.2rem;
-            color: #94a3b8;
-        }
+  .hero-name{
+    font-family:var(--sans); font-weight:700;
+    font-size:clamp(30px,5vw,44px);
+    margin:28px 0 6px;
+    letter-spacing:-0.01em;
+  }
+  .hero-role{color:var(--muted); font-size:17px; margin:0 0 18px;}
+  .hero-tags{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:22px;}
+  .tag{
+    font-family:var(--mono); font-size:12px; color:var(--amber);
+    background:var(--amber-dim); border:1px solid #5A3E17;
+    padding:4px 10px; border-radius:4px;
+  }
+  .hero-actions{display:flex; flex-wrap:wrap; gap:12px;}
+  .btn{
+    font-family:var(--mono); font-size:13px; text-decoration:none;
+    padding:10px 18px; border-radius:6px; border:1px solid var(--line);
+    transition:border-color .15s, background .15s;
+  }
+  .btn-primary{background:var(--green); color:#08251C; border-color:var(--green); font-weight:600;}
+  .btn-primary:hover{background:#28C08D;}
+  .btn-ghost{color:var(--text);}
+  .btn-ghost:hover{border-color:var(--muted);}
 
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 22px;
-            background: #3b82f6;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
+  /* ---------- SECTION SHELL ---------- */
+  section{padding:52px 0;}
+  section + section{border-top:1px solid var(--line);}
+  .eyebrow{
+    font-family:var(--mono); font-size:12px; color:var(--green);
+    text-transform:uppercase; letter-spacing:0.12em; margin:0 0 10px;
+  }
+  h2{font-size:22px; font-weight:700; margin:0 0 20px;}
+  p.lead{color:var(--muted); font-size:15.5px; max-width:640px;}
 
-        .btn:hover {
-            background: #2563eb;
-        }
+  /* ---------- SKILLS ---------- */
+  .skill-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px; margin-top:8px;}
+  .skill-card{
+    background:var(--surface); border:1px solid var(--line); border-radius:8px;
+    padding:16px 18px;
+  }
+  .skill-card h3{
+    font-family:var(--mono); font-size:12px; color:var(--amber);
+    text-transform:uppercase; letter-spacing:0.06em; margin:0 0 10px;
+  }
+  .skill-card ul{list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:6px;}
+  .skill-card li{
+    font-size:13px; color:var(--text); background:var(--surface-2);
+    border:1px solid var(--line); padding:4px 9px; border-radius:4px;
+  }
 
-        section {
-            padding: 60px 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
+  /* ---------- CERTS ---------- */
+  .cert-row{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:12px;}
+  .cert{
+    display:flex; align-items:center; gap:12px;
+    background:var(--surface); border:1px solid var(--line); border-radius:8px;
+    padding:14px 16px;
+  }
+  .cert .badge{
+    font-family:var(--mono); font-size:11px; color:var(--green);
+    background:var(--green-dim); border:1px solid #1F5A46;
+    padding:5px 8px; border-radius:4px; flex-shrink:0;
+  }
+  .cert .name{font-size:14px;}
 
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 30px;
-            text-align: center;
-        }
+  /* ---------- EXPERIENCE : systemd style ---------- */
+  .unit{
+    background:var(--surface); border:1px solid var(--line); border-radius:8px;
+    margin-bottom:16px; overflow:hidden;
+  }
+  .unit-head{
+    display:flex; flex-wrap:wrap; align-items:baseline; gap:8px 14px;
+    padding:14px 18px; background:var(--surface-2); border-bottom:1px solid var(--line);
+    font-family:var(--mono); font-size:13px;
+  }
+  .unit-head .svc{color:var(--text); font-weight:600;}
+  .unit-head .state{display:flex; align-items:center; gap:6px;}
+  .unit-head .state .pip{width:8px; height:8px; border-radius:50%;}
+  .state.active{color:var(--green);}
+  .state.active .pip{background:var(--green);}
+  .state.inactive{color:var(--muted);}
+  .state.inactive .pip{background:var(--muted);}
+  .unit-body{padding:16px 18px 18px;}
+  .unit-meta{font-family:var(--mono); font-size:12.5px; color:var(--muted); margin:0 0 12px; display:grid; gap:3px;}
+  .unit-meta b{color:var(--text); font-weight:500;}
+  .unit-body ul{margin:0; padding-left:18px; color:var(--text); font-size:14px;}
+  .unit-body li{margin-bottom:6px;}
+  .unit-body li:last-child{margin-bottom:0;}
 
-        .about p {
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
-            color: #cbd5e1;
-        }
+  /* ---------- EDUCATION ---------- */
+  .edu{display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; padding:14px 0; border-bottom:1px solid var(--line);}
+  .edu:last-child{border-bottom:none;}
+  .edu .deg{font-weight:600; font-size:15px;}
+  .edu .school{color:var(--muted); font-size:13.5px;}
+  .edu .yr{font-family:var(--mono); font-size:13px; color:var(--muted); white-space:nowrap;}
 
-        .skills {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
+  /* ---------- CONTACT / FOOTER ---------- */
+  footer{padding:52px 0 60px;}
+  .contact-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px; margin-top:20px;}
+  .contact-item{
+    display:flex; align-items:center; justify-content:space-between; gap:10px;
+    background:var(--surface); border:1px solid var(--line); border-radius:8px;
+    padding:14px 16px; text-decoration:none; font-size:14px;
+    transition:border-color .15s;
+  }
+  .contact-item:hover{border-color:var(--green);}
+  .contact-item .k{color:var(--muted); font-family:var(--mono); font-size:12px;}
+  .fine{color:var(--muted); font-size:12.5px; font-family:var(--mono); margin-top:36px;}
 
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            background: #334155;
-        }
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .project {
-            background: #1e293b;
-            padding: 25px;
-            border-radius: 12px;
-            transition: 0.3s;
-        }
-
-        .project:hover {
-            background: #334155;
-            transform: translateY(-5px);
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            background: #020617;
-            font-size: 0.9rem;
-            color: #64748b;
-        }
-
-        a {
-            color: #3b82f6;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  @media (max-width:600px){
+    .navlinks{display:none;}
+    header.hero{padding:44px 0 30px;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    #typed-line::after{animation:none;}
+  }
+</style>
 </head>
 <body>
 
-<header>
-    <h1>Abhishek Sharma</h1>
-    <p>Senior Linux System Administrator | RHCE | AWS | Ansible</p>
-    <a href="mailto:abhishek1997sh@gmail.com" class="btn">Contact Me</a>
+<nav>
+  <div class="wrap">
+    <div class="brand">abhishek<span class="dot">@</span>sysadmin<span class="dot">:~$</span></div>
+    <div class="navlinks">
+      <a href="#skills">skills</a>
+      <a href="#certs">certs</a>
+      <a href="#experience">experience</a>
+      <a href="#education">education</a>
+      <a href="#contact" class="resume-link">contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="term">
+      <div class="term-bar">
+        <span></span><span></span><span></span>
+        <span class="t-title">whoami.sh</span>
+      </div>
+      <div class="term-body">
+        <p class="term-line muted">$ whoami</p>
+        <p class="term-line green">abhishek_sharma</p>
+        <p class="term-line muted">$ cat role.txt</p>
+        <p class="term-line">Linux System Administrator — RHCE Certified</p>
+        <p class="term-line muted">$ uptime --experience</p>
+        <p class="term-line">7+ years IT &nbsp;|&nbsp; 4.5+ years hands-on Linux (Banking &amp; Defence)</p>
+        <p class="term-line muted" id="typed-line">$ <span id="typed-text"></span></p>
+      </div>
+    </div>
+
+    <h1 class="hero-name">Abhishek Sharma</h1>
+    <p class="hero-role">RHCE-certified Linux System Administrator — RHEL &middot; Azure &middot; AWS &middot; Banking Infrastructure</p>
+    <div class="hero-tags">
+      <span class="tag">RHEL 7/8/9</span>
+      <span class="tag">LVM &amp; Storage</span>
+      <span class="tag">Bash &amp; Ansible</span>
+      <span class="tag">DC / DR</span>
+      <span class="tag">RCA &amp; ITSM</span>
+    </div>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="mailto:abhishek1997sh@gmail.com">Get in touch</a>
+      <a class="btn btn-ghost" href="https://github.com/abhishek021997" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn btn-ghost" href="https://linkedin.com/in/abhishek-sharma-7b6974153" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+  </div>
 </header>
 
-<section class="about">
-    <h2>About Me</h2>
-    <p>
-        RHCE-certified Linux System Administrator with 4+ years of experience managing 50+ RHEL production servers in Banking and Defence environments.
-        Skilled in Linux Administration, Server Hardening, LVM, Bash Scripting, AWS (EC2, IAM, VPC), and Ansible automation.
-        Passionate about Infrastructure, Cloud, and DevOps technologies.
+<section id="about">
+  <div class="wrap">
+    <p class="eyebrow">// summary</p>
+    <h2>Keeping production infrastructure up, patched, and recoverable</h2>
+    <p class="lead">
+      RHCE-certified Linux System Administrator with 7+ years of overall IT experience, including 4.5+ years of hands-on
+      Linux Administration across Banking and Defence domains. Experienced in managing Red Hat Enterprise Linux
+      (RHEL 7/8/9) production environments, physical and virtual servers, OS installation, patch management, in-place
+      OS upgrades, LVM administration, ReaR backup &amp; recovery, and disaster recovery (DC/DR). Comfortable owning
+      incidents end to end — from RCA to SLA-driven resolution — while coordinating with database, application,
+      network, and security teams.
     </p>
+  </div>
 </section>
 
-<section>
-    <h2>Technical Skills</h2>
-    <div class="skills">
-        <div class="card">Linux (RHEL 7/8)</div>
-        <div class="card">AWS (EC2, IAM, VPC)</div>
-        <div class="card">Ansible Automation</div>
-        <div class="card">Shell Scripting</div>
-        <div class="card">LVM & Storage</div>
-        <div class="card">Production Support (L2/L3)</div>
+<section id="skills">
+  <div class="wrap">
+    <p class="eyebrow">// stack</p>
+    <h2>Key skills</h2>
+    <div class="skill-grid">
+      <div class="skill-card">
+        <h3>Operating systems</h3>
+        <ul><li>RHEL 7/8/9</li><li>CentOS</li><li>IBM AIX (L1)</li></ul>
+      </div>
+      <div class="skill-card">
+        <h3>Linux administration</h3>
+        <ul><li>User &amp; group mgmt</li><li>LVM</li><li>SSH config</li><li>System hardening</li><li>Patch mgmt</li></ul>
+      </div>
+      <div class="skill-card">
+        <h3>Automation</h3>
+        <ul><li>Bash scripting</li><li>Ansible (playbooks, roles)</li></ul>
+      </div>
+      <div class="skill-card">
+        <h3>Monitoring &amp; ops</h3>
+        <ul><li>Grafana</li><li>Prometheus</li><li>Log analysis</li><li>RCA</li></ul>
+      </div>
+      <div class="skill-card">
+        <h3>Cloud</h3>
+        <ul><li>AWS EC2</li><li>IAM</li><li>S3</li><li>EBS</li><li>VPC</li></ul>
+      </div>
+      <div class="skill-card">
+        <h3>DevOps &amp; tools</h3>
+        <ul><li>Docker</li><li>Kubernetes (basic)</li><li>Jenkins</li><li>Git</li></ul>
+      </div>
     </div>
+  </div>
 </section>
 
-<section>
-    <h2>Projects</h2>
-    <div class="projects">
-        <div class="project">
-            <h3>Linux Server Hardening</h3>
-            <p>Implemented security hardening, SSH configuration, firewall rules, and automated patching across production servers.</p>
-        </div>
-        <div class="project">
-            <h3>AWS Infrastructure Setup</h3>
-            <p>Designed and deployed EC2 instances with IAM roles, VPC networking, and automated backups using snapshots.</p>
-        </div>
-        <div class="project">
-            <h3>Ansible Automation</h3>
-            <p>Created playbooks for user management, package installation, and patch automation across multiple servers.</p>
-        </div>
+<section id="certs">
+  <div class="wrap">
+    <p class="eyebrow">// verified</p>
+    <h2>Certifications</h2>
+    <div class="cert-row">
+      <div class="cert"><span class="badge">RHCSA</span><span class="name">Red Hat Certified System Administrator</span></div>
+      <div class="cert"><span class="badge">RHCE</span><span class="name">Red Hat Certified Engineer</span></div>
+      <div class="cert"><span class="badge">AZ-104</span><span class="name">Microsoft Azure Administrator Associate</span></div>
+      <div class="cert"><span class="badge">SAA-C03</span><span class="name">AWS Certified Solutions Architect – Associate</span></div>
     </div>
+  </div>
 </section>
 
-<section>
-    <h2>Connect With Me</h2>
-    <p style="text-align:center;">
-        <a href="https://github.com/abhishek021997" target="_blank">GitHub</a> |
-        <a href="www.linkedin.com/in/abhishek-sharma-7b6974153" target="_blank">LinkedIn</a>
-    </p>
+<section id="experience">
+  <div class="wrap">
+    <p class="eyebrow">// systemctl status</p>
+    <h2>Professional experience</h2>
+
+    <div class="unit">
+      <div class="unit-head">
+        <span class="svc">ctrls-idfc-first-bank.service</span>
+        <span class="state active"><span class="pip"></span>active (running)</span>
+      </div>
+      <div class="unit-body">
+        <div class="unit-meta">
+          <div><b>Employer:</b> CtrlS Datacenters Ltd.</div>
+          <div><b>Client:</b> IDFC FIRST Bank &middot; Banking</div>
+          <div><b>Role:</b> Sr. Linux Administrator</div>
+          <div><b>Since:</b> Feb 2026</div>
+        </div>
+        <ul>
+          <li>Administer RHEL 7/8 production servers across DC and DR environments, plus L1 support on IBM AIX.</li>
+          <li>Perform in-place OS upgrades (RHEL 7→8, 8→9) using local ISO repositories and standard change procedures.</li>
+          <li>Execute monthly and emergency patching, kernel updates, and security hardening.</li>
+          <li>Manage LVM, filesystem, and storage administration; automate routine tasks with Bash and Ansible.</li>
+          <li>Own incident, change, and RCA processes through ITSM tooling while holding 24×7 SLA commitments.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="unit">
+      <div class="unit-head">
+        <span class="svc">wipro-indian-air-force.service</span>
+        <span class="state inactive"><span class="pip"></span>inactive (dead) since Feb 2026</span>
+      </div>
+      <div class="unit-body">
+        <div class="unit-meta">
+          <div><b>Employer:</b> Wipro Limited</div>
+          <div><b>Client:</b> Indian Air Force &middot; Defence</div>
+          <div><b>Role:</b> Linux System Administrator</div>
+          <div><b>Duration:</b> Jan 2022 – Feb 2026</div>
+        </div>
+        <ul>
+          <li>Managed RHEL 7/8 servers across DC and DR sites, including physical and VMware virtual hosts.</li>
+          <li>Applied monthly and emergency security patches and hardening measures across the server fleet.</li>
+          <li>Wrote and maintained Bash scripts to automate health checks, log rotation, and patch deployment.</li>
+          <li>Ran RHEL in-place upgrades and IBM AIX L1 support; managed LVM storage and SSH-based access controls.</li>
+          <li>Investigated incidents via log analysis and RCA; coordinated DC-DR sync drills and ITSM-tracked SLAs.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="unit">
+      <div class="unit-head">
+        <span class="svc">wipro-icici-bank.service</span>
+        <span class="state inactive"><span class="pip"></span>inactive (dead) since Dec 2021</span>
+      </div>
+      <div class="unit-body">
+        <div class="unit-meta">
+          <div><b>Employer:</b> Wipro Limited</div>
+          <div><b>Client:</b> ICICI Bank &middot; Banking</div>
+          <div><b>Role:</b> Desktop Support Engineer</div>
+          <div><b>Duration:</b> Jan 2021 – Dec 2021</div>
+        </div>
+        <ul>
+          <li>Provided desktop/laptop support and OS installs across an enterprise banking environment.</li>
+          <li>Managed user accounts, access requests, and hardware/network troubleshooting under SLA-based tickets.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="unit">
+      <div class="unit-head">
+        <span class="svc">wipro-yes-bank.service</span>
+        <span class="state inactive"><span class="pip"></span>inactive (dead) since Dec 2020</span>
+      </div>
+      <div class="unit-body">
+        <div class="unit-meta">
+          <div><b>Employer:</b> Wipro Limited</div>
+          <div><b>Client:</b> YES Bank &middot; Banking</div>
+          <div><b>Role:</b> Desktop Support Engineer</div>
+          <div><b>Duration:</b> Jan 2019 – Dec 2020</div>
+        </div>
+        <ul>
+          <li>Provided desktop/laptop support and OS installs across an enterprise banking environment.</li>
+          <li>Managed user accounts, access requests, and hardware/network troubleshooting under SLA-based tickets.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
 </section>
 
-<footer>
-    © 2026 Abhishek Sharma | Linux & Cloud Enthusiast
+<section id="education">
+  <div class="wrap">
+    <p class="eyebrow">// background</p>
+    <h2>Education</h2>
+    <div class="edu">
+      <div><div class="deg">Master of Computer Applications (MCA)</div><div class="school">Jain University</div></div>
+      <div class="yr">2026</div>
+    </div>
+    <div class="edu">
+      <div><div class="deg">Bachelor of Arts (BA)</div><div class="school">Delhi University</div></div>
+      <div class="yr">2021</div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="wrap">
+    <p class="eyebrow">// reach me</p>
+    <h2>Contact</h2>
+    <div class="contact-grid">
+      <a class="contact-item" href="mailto:abhishek1997sh@gmail.com"><span>abhishek1997sh@gmail.com</span><span class="k">email</span></a>
+      <a class="contact-item" href="tel:+919625003829"><span>+91-9625003829</span><span class="k">phone</span></a>
+      <a class="contact-item" href="https://linkedin.com/in/abhishek-sharma-7b6974153" target="_blank" rel="noopener"><span>abhishek-sharma</span><span class="k">linkedin</span></a>
+      <a class="contact-item" href="https://github.com/abhishek021997" target="_blank" rel="noopener"><span>abhishek021997</span><span class="k">github</span></a>
+    </div>
+    <p class="fine">New Delhi, India &nbsp;·&nbsp; last updated 2026</p>
+  </div>
 </footer>
+
+<script>
+  (function(){
+    var el = document.getElementById('typed-text');
+    var full = 'echo "Available for new opportunities"';
+    var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduced || !el){ if(el) el.textContent = full; return; }
+    var i = 0;
+    function tick(){
+      if(i <= full.length){
+        el.textContent = full.slice(0,i);
+        i++;
+        setTimeout(tick, 35);
+      }
+    }
+    tick();
+  })();
+</script>
 
 </body>
 </html>
-
